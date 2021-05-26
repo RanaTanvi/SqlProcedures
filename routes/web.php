@@ -33,7 +33,7 @@ Route::get('insert-user', function () {
     return view('insert-user');
 });
 
-Route::post('insert-user', function () { 
+Route::post('insert', function () { 
     $user = DB::select(
        'CALL insert_users(?,?,?)',
        [
